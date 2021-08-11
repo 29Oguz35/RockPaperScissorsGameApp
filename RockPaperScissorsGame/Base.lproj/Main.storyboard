@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissorsGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock paper scissors .png" translatesAutoresizingMaskIntoConstraints="NO" id="UmA-xO-xPo">
+                                <rect key="frame" x="87" y="115" width="240" height="184"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-VX-Twz">
+                                <rect key="frame" x="20" y="359" width="115" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="PJF-7Y-qa5"/>
+                                    <constraint firstAttribute="height" constant="147" id="kP6-wQ-Q4U"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="BBq-Xz-KHU">
+                                <rect key="frame" x="150" y="359" width="115" height="147"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="Zk7-yf-lW8">
+                                <rect key="frame" x="279" y="359" width="115" height="147"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKl-xv-qZN">
+                                <rect key="frame" x="20" y="680" width="374" height="52"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="u4k-C7-MlF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-pc-maZ">
+                                <rect key="frame" x="87" y="764" width="240" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7AW-7q-ano"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5v-Pd-o6D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xe2-vw-bbX">
+                                <rect key="frame" x="20" y="585" width="374" height="52"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="MLr-XJ-WFy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MFA-VX-Twz" firstAttribute="top" secondItem="UmA-xO-xPo" secondAttribute="bottom" constant="60" id="2wv-e5-GCW"/>
+                            <constraint firstItem="Xe2-vw-bbX" firstAttribute="top" secondItem="MFA-VX-Twz" secondAttribute="bottom" constant="79" id="2yo-nw-4F5"/>
+                            <constraint firstItem="MFA-VX-Twz" firstAttribute="leading" secondItem="Xe2-vw-bbX" secondAttribute="leading" id="3f9-cc-J42"/>
+                            <constraint firstItem="BBq-Xz-KHU" firstAttribute="top" secondItem="Zk7-yf-lW8" secondAttribute="top" id="4ar-6V-SEI"/>
+                            <constraint firstItem="Xe2-vw-bbX" firstAttribute="leading" secondItem="wKl-xv-qZN" secondAttribute="leading" id="7KM-pX-OSZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yqs-pc-maZ" secondAttribute="bottom" constant="56" id="86c-34-IgX"/>
+                            <constraint firstItem="Xe2-vw-bbX" firstAttribute="trailing" secondItem="wKl-xv-qZN" secondAttribute="trailing" id="HMo-pF-Q7w"/>
+                            <constraint firstItem="MFA-VX-Twz" firstAttribute="bottom" secondItem="BBq-Xz-KHU" secondAttribute="bottom" id="LpK-uW-4Cs"/>
+                            <constraint firstItem="wKl-xv-qZN" firstAttribute="top" secondItem="Xe2-vw-bbX" secondAttribute="bottom" constant="43" id="OYK-h9-4tt"/>
+                            <constraint firstItem="UmA-xO-xPo" firstAttribute="trailing" secondItem="yqs-pc-maZ" secondAttribute="trailing" id="ReJ-lc-eIP"/>
+                            <constraint firstItem="UmA-xO-xPo" firstAttribute="leading" secondItem="yqs-pc-maZ" secondAttribute="leading" id="TsS-a5-ixn"/>
+                            <constraint firstItem="yqs-pc-maZ" firstAttribute="top" secondItem="wKl-xv-qZN" secondAttribute="bottom" constant="32" id="VSb-Xo-B9P"/>
+                            <constraint firstItem="Zk7-yf-lW8" firstAttribute="trailing" secondItem="Xe2-vw-bbX" secondAttribute="trailing" id="Z1s-ly-HtN"/>
+                            <constraint firstItem="wKl-xv-qZN" firstAttribute="centerX" secondItem="yqs-pc-maZ" secondAttribute="centerX" id="eBQ-8n-QWH"/>
+                            <constraint firstItem="Zk7-yf-lW8" firstAttribute="leading" secondItem="BBq-Xz-KHU" secondAttribute="trailing" constant="14" id="iay-2A-gi1"/>
+                            <constraint firstItem="MFA-VX-Twz" firstAttribute="top" secondItem="BBq-Xz-KHU" secondAttribute="top" id="o5d-8N-QNu"/>
+                            <constraint firstItem="BBq-Xz-KHU" firstAttribute="centerX" secondItem="Xe2-vw-bbX" secondAttribute="centerX" id="p5f-je-3fC"/>
+                            <constraint firstItem="Zk7-yf-lW8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r7g-38-5hK"/>
+                            <constraint firstItem="MFA-VX-Twz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rVo-1u-xJd"/>
+                            <constraint firstItem="BBq-Xz-KHU" firstAttribute="bottom" secondItem="Zk7-yf-lW8" secondAttribute="bottom" id="tex-jA-BmJ"/>
+                            <constraint firstItem="UmA-xO-xPo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="u3o-t6-9Ua"/>
+                            <constraint firstItem="BBq-Xz-KHU" firstAttribute="leading" secondItem="MFA-VX-Twz" secondAttribute="trailing" constant="15" id="vzh-Dh-vZY"/>
+                            <constraint firstItem="UmA-xO-xPo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="yjf-Ep-hBI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="wKl-xv-qZN" id="uhy-KG-ulX"/>
+                        <outlet property="paperImageView" destination="BBq-Xz-KHU" id="RrI-Rg-98W"/>
+                        <outlet property="resultLabel" destination="Xe2-vw-bbX" id="sMc-Kj-Zvy"/>
+                        <outlet property="rockImageView" destination="MFA-VX-Twz" id="t57-tB-0EK"/>
+                        <outlet property="rpsImageView" destination="UmA-xO-xPo" id="kR9-Vx-2rg"/>
+                        <outlet property="scissorsImageView" destination="Zk7-yf-lW8" id="4Qm-lh-fH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="225" height="225"/>
+        <image name="rock" width="279" height="181"/>
+        <image name="rock paper scissors .png" width="245" height="206"/>
+        <image name="scissors" width="1024" height="1024"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
